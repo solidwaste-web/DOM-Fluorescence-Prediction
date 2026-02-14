@@ -1,18 +1,26 @@
-# DOM Fluorescence Prediction via Machine Learning
+# Reliable DOM Fluorescence Prediction via Solvent Sensitive Machine Learning and Domain Refinement
 
-**Reliable DOM Fluorescence Prediction via Solvent Sensitive Machine Learning and Domain Refinement**
-
-> **Note**: This repository contains the code and data for manuscript review purposes only. The code is provided to support the reproducibility and transparency of our research findings.
-
----
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18637729.svg)](https://doi.org/10.5281/zenodo.18637729)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 ## Overview
 
-This project implements a machine learning pipeline for predicting dissolved organic matter (DOM) fluorescence emission wavelengths, with a focus on aqueous solvent systems. The methodology combines:
+This repository contains the complete code implementation for the manuscript **"Reliable DOM Fluorescence Prediction via Solvent Sensitive Machine Learning and Domain Refinement"**.
 
-- **XGBoost regression** with solvent-specific optimization
-- **SHAP analysis** for feature importance interpretation
-- **AD-SAL** (Applicability Domain based on Similarity-weighted Average Leverage) for prediction reliability assessment
+The code implements a novel machine learning approach for predicting dissolved organic matter (DOM) fluorescence emission wavelengths, with enhanced focus on aqueous samples through solvent-directed oversampling and applicability domain analysis.
+
+## Key Features
+
+- **Data Preprocessing**: Comprehensive data cleaning and feature engineering pipeline
+- **Solvent-Directed Oversampling**: Novel XGB-A(11) model with 11× enhancement for aqueous samples
+- **XGBoost Model**: Optimized gradient boosting implementation
+- **SHAP Analysis**: Feature importance analysis for model interpretability
+- **AD-SAL**: Applicability domain analysis with standardized absolute leverage
+- **Comprehensive Evaluation**: Multiple metrics (R², RMSE, MAE) for overall and aqueous-specific performance
+
+## Repository Structure
+
 
 ## Project Structure
 
@@ -411,16 +419,10 @@ AD-SAL analysis: 5-10 minutes
 
 Total pipeline: ~30-45 minutes (depending on dataset size)
 
-Citation
-If you use this code or methodology, please cite our manuscript:
-
-[Citation information will be added upon publication]
 Contact
 For questions regarding this code or the manuscript, please contact:
 
-Corresponding Author: [Name and Email]
-
-First Author: [Name and Email]
+Corresponding Author: [yanhe202204@163.com]
 
 License
 This code is provided for manuscript review purposes only.
@@ -431,8 +433,6 @@ Redistribution or commercial use is not permitted without explicit permission
 
 Upon publication, a more permissive license may be applied
 
-Acknowledgments
-This work was supported by [Funding Information].
 
 We thank the developers of the open-source libraries used in this project:
 
@@ -451,3 +451,10 @@ Code Version: 1.0.0
 Python Version: 3.9
 
 Platform: Cross-platform (Windows/macOS/Linux)
+
+Repository: https://github.com/solidwaste-web/DOM-Fluorescence-Prediction
+
+DOI: https://doi.org/10.5281/zenodo.18637729
+
+Version: 1.0.0
+Last Updated: February 14, 2026
